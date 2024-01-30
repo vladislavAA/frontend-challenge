@@ -1,0 +1,8 @@
+.catalog {
+  display: grid;
+  padding: 53px 14px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 225px));
+  margin: 48px 48px;
+  justify-content: space-between;
+  row-gap: 48px;
+}

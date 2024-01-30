@@ -1,0 +1,33 @@
+.card {
+  width: 225px;
+  height: 225px;
+
+  &__img-box {
+    position: relative;
+    width: 225px;
+    height: 225px;
+
+    &:hover .card__icon-favorites {
+      opacity: 1;
+    }
+
+    &:hover .card__img {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 5px #0000003d, 0px 9px 18px #0000002e;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__icon-favorites {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 0;
+  }
+}
